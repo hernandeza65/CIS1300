@@ -50,16 +50,17 @@ html
 	{
 		height: 200px;
 		width: 100%;
-		vertical-align: bottom;
+		vertical-align: baseline;
+		text-align: inherit;
 		background-color: #002488;
 	}
 
-	:firstChild
+	aside :firstChild
 	{
-		position: ;
+		vertical-align: bottom;
 	}
 
-	:lastChild
+	aside :lastChild
 	{
 
 	}
@@ -69,13 +70,13 @@ html
 		<h1>HEADER</h1>
 	</header>
 <div id = "content">
-	<aside>
+	<aside id="firstChild" style="text-align: right;">
 		<p>ASIDE</p>
 		<main>
 			<p>MAIN</p>
 		</main>
 	</aside>
-	<aside>
+	<aside id="lastChild" style="text-align: left;">
 		<p>ASIDE</p>
 	</aside>
 </div>
