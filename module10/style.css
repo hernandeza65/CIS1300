@@ -7,16 +7,15 @@ License URI: http://www.gnu.org/licenses/gpl.html
 */
 
 
-
-/*--------------------------------------------------------------
-selector {
-	layout(position)
+selector 
+{
+	layout: position;
 	
-	content(text)
+	content: text;
 	
-	design(background)
+	design: background;
 	
-	other(z-index)
+	other: z-index;
 }
 ----------------------------------------------------------------
 >>> COLORS:	  
@@ -24,7 +23,7 @@ selector {
 	blue-dark:#003366;
 	green:#00cc66;	
 	red: #aa0000;
-	yellow: #DFE69E rgba(255,255,100,0.5);
+	yellow: #DFE69E rgba{255,255,100,0.5};
 
 ----------------------------------------------------------------
 >>> TABLE OF CONTENTS:
