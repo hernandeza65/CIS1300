@@ -237,16 +237,22 @@ iframe {
     }
     @keyframes arrowlight {
       0% {
-        background-image:none;
-      }
-      60% {
         background-image:url(arrow.png);
       }
+      60% {
+        background-image:none;
+      }
       61% {
+        background-image:none;
+      }
+      90% {
+        background-image: none;
+      }
+      91% {
         background-image:url(arrow.png);
       }
       100% {
-        background-image: none;
+        background-image: url(arrow.png);
       }
       
     }
