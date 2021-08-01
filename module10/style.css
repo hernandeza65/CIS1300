@@ -239,20 +239,14 @@ iframe {
       0% {
         background-image:none;
       }
-      50% {
-        background-image:none;
+      60% {
+        background-image:url(arrow.png);
       }
-      51% {
-        background-image:url(image/arrow.png);
-      }
-      90% {
-        background-image:url(image/arrow.png);
-      }
-      91% {
-        background-image:none;
+      61% {
+        background-image:url(arrow.png);
       }
       100% {
-        background-image:none;
+        background-image: none;
       }
       
     }
