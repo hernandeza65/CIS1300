@@ -604,7 +604,7 @@ body {
 
 .header {
   padding: 0;
-  background-image: url(../image/header.jpg);
+  background-image: url(header.jpg);
   background-size: cover;
 }
 
