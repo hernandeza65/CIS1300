@@ -8,15 +8,15 @@ License URI: http://www.gnu.org/licenses/gpl.html
 
 
 
-/*--------------------------------------------------------------
+--------------------------------------------------------------
 selector {
-	layout(position)
+	layout: position;
 	
-	content(text)
+	content: text;
 	
-	design(background)
+	design: background;
 	
-	other(z-index)
+	other: z-index;
 }
 ----------------------------------------------------------------
 >>> COLORS:	  
@@ -51,6 +51,7 @@ selector {
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
+
 }
 html.not-top { 
 	display:none;
@@ -60,7 +61,12 @@ html.not-top {
 }
 /*the entire body of the html page*/
 body {    
-	background: #eeeeee;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+29,2989d8+57,2989d8+57,1e5799+80,2989d8+92&0+0,0.8+15,1+19,1+74,1+81,0.8+85,0+100 */
+background: -moz-linear-gradient(top,  rgba(30,87,153,0) 0%, rgba(30,87,153,0.8) 15%, rgba(30,87,153,1) 19%, rgba(30,87,153,1) 29%, rgba(41,137,216,1) 57%, rgba(33,100,169,1) 74%, rgba(30,87,153,1) 80%, rgba(31,91,158,1) 81%, rgba(35,108,179,0.8) 85%, rgba(41,137,216,0.43) 92%, rgba(41,137,216,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(30,87,153,0) 0%,rgba(30,87,153,0.8) 15%,rgba(30,87,153,1) 19%,rgba(30,87,153,1) 29%,rgba(41,137,216,1) 57%,rgba(33,100,169,1) 74%,rgba(30,87,153,1) 80%,rgba(31,91,158,1) 81%,rgba(35,108,179,0.8) 85%,rgba(41,137,216,0.43) 92%,rgba(41,137,216,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(30,87,153,0) 0%,rgba(30,87,153,0.8) 15%,rgba(30,87,153,1) 19%,rgba(30,87,153,1) 29%,rgba(41,137,216,1) 57%,rgba(33,100,169,1) 74%,rgba(30,87,153,1) 80%,rgba(31,91,158,1) 81%,rgba(35,108,179,0.8) 85%,rgba(41,137,216,0.43) 92%,rgba(41,137,216,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient[startColorstr='#001e5799', endColorstr='#002989d8',GradientType=0]; /* IE6-9 */
+
 }
 /* a wrapper around all the actual page content
 this will be centered on the page*/
@@ -136,21 +142,34 @@ iframe {
 
 .polaroid {
     padding: 1em;
-    background-color: grey;
+    background-color: #f8f8ff;
     border-radius: 1rem;
     margin: 1em 1em 2em 1em;
     max-width: 600px;
+    box-shadow: 5px 5px 5px 5px;
+    
 }
 .polaroid .aspect-ratio {
+    height: 0px;
+    width: 100%;
+    padding-bottom: 75%;
+    position: relative;
 
 }
 .polaroid .aspect-ratio img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    object-fit: cover;
 }
 .polaroid p {
     text-align: center;
     font-size: 2em;
+    font-family: monospace courier;
 }
 
 
