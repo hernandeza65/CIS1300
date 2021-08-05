@@ -29,28 +29,24 @@ Holy Grail Grid Layout
 	{
 		grid-area: left;
 		background-color: darkgreen;
-		text-align: center;
-		font-size: large;
 	}
 	main
 	{
 		grid-area: main;
 		background-color: mediumvioletred;
-		text-align: center;
-		font-size: large;
 	}
 	aside:last-of-type
 	{
 		grid-area: right;
 		background-color: darkcyan;
-		text-align: center;
-		font-size: large;
 	}
 	footer
 	{
 		grid-area: footer;
 		background-color: darkblue;
-		text-align: center;
-		font-size: large;
 	}
 	
+	h1, p
+	{
+		font-size: xx-large;
+	}
