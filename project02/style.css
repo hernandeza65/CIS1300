@@ -28,21 +28,29 @@ Holy Grail Grid Layout
 	aside:first-of-type
 	{
 		grid-area: left;
-		background-color: darkcyan;
+		background-color: darkgreen;
+		text-align: center;
+		font-size: large;
 	}
 	main
 	{
 		grid-area: main;
 		background-color: mediumvioletred;
+		text-align: center;
+		font-size: large;
 	}
 	aside:last-of-type
 	{
 		grid-area: right;
 		background-color: darkcyan;
+		text-align: center;
+		font-size: large;
 	}
 	footer
 	{
 		grid-area: footer;
 		background-color: darkblue;
+		text-align: center;
+		font-size: large;
 	}
 	

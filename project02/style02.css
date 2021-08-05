@@ -1,1 +1,73 @@
+@media screen and (max-width:575px) 
+{
+      header, aside:first-of-type, main, aside:last-of-type, footer, body, p , h1 > .SMALL
+      {
+      display: grid;
+		grid-template-columns: 1fr 2fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-areas: 
+		"header header header"
+		"left left left"
+		"main main main"
+		"right right right"
+		"footer footer footer";
+		margin: 0;
+		padding: 0;
+		}
+}
+
+@media screen and (min-width:576px) 
+{
+      header, aside:first-of-type, main, aside:last-of-type, footer, body, p , h1 > .MEDIUM
+      {
+      display: grid;
+		grid-template-columns: 1fr 2fr 1fr 2fr;
+		grid-template-rows: 1fr 1fr 1fr auto;
+		grid-template-areas: 
+		"header header header header"
+		"left left right right"
+		"main main main main"
+		"footer footer footer footer";
+		margin: 0;
+		padding: 0;
+		}
+}
+
+@media screen and (min-width: 991px) 
+{
+      header, aside:first-of-type, main, aside:last-of-type, footer, body, p, h1 > .MEDIUM
+      {
+      display: grid;
+		grid-template-columns: 1fr 2fr 1fr 2fr;
+		grid-template-rows: 1fr 1fr 1fr auto;
+		grid-template-areas: 
+		"header header header header"
+		"left left right right"
+		"main main main main"
+		"footer footer footer footer";
+		margin: 0;
+		padding: 0;
+
+
+		}
+}
+
+@media screen and (min-width: 992px) 
+{
+      header, aside:first-of-type, main, aside:last-of-type, footer, body, p, h1 > .LARGE
+      {
+      display: grid;
+		grid-template-columns: 1fr 2fr 1fr;
+		grid-template-rows: auto 1fr auto;
+		grid-template-areas: 
+		"header header header"
+		"left main right"
+		"footer footer footer";
+
+		
+		margin: 0;
+		padding: 0;
+	}
+}
+
 
